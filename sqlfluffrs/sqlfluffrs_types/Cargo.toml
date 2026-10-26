@@ -1,0 +1,18 @@
+[package]
+name = "sqlfluffrs_types"
+version.workspace = true
+edition = "2021"
+rust-version.workspace = true
+
+[dependencies]
+hashbrown.workspace = true
+regex.workspace = true
+env_logger.workspace = true
+log.workspace = true
+serde.workspace = true
+uuid.workspace = true
+fancy-regex.workspace = true
+once_cell.workspace = true
+
+[features]
+unicode = []
