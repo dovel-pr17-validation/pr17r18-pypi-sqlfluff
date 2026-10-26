@@ -387,7 +387,11 @@ fn compute_yaml_hash(yaml: &Value) -> String {
     let yaml_str = process_yaml_11(serde_yaml_ng::to_string(&clean).unwrap());
     let mut hasher = Blake2s256::new();
     hasher.update(yaml_str.as_bytes());
-    format!("{:x}", hasher.finalize())
+    hasher
+        .finalize()
+        .iter()
+        .map(|b| format!("{:02x}", b))
+        .collect()
 }
 
 #[test]

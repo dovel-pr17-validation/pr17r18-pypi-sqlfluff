@@ -68,7 +68,7 @@ python = [
 hashbrown.workspace = true
 pyo3 = { workspace = true, optional = true }
 serde_yaml_ng.workspace = true
-blake2 = "0.10.6"
+blake2 = "0.11.0"
 sqlfluffrs_types = { path = "sqlfluffrs_types" }
 sqlfluffrs_lexer = { path = "sqlfluffrs_lexer" }
 sqlfluffrs_dialects = { path = "sqlfluffrs_dialects" }
